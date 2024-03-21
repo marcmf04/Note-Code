@@ -9,6 +9,7 @@ class IndexController extends Controller
 {
     public function index()
     {
+        // hola
         return Inertia::render('Index');
     }
 }

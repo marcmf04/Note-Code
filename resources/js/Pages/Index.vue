@@ -1,5 +1,6 @@
 <script setup>
     import IndexContent from "@/Components/Index/IndexContent.vue";
+    import Header from '@/Components/Index/Header.vue';
     import { defineProps } from "vue";
 
     const props = defineProps({
@@ -11,8 +12,8 @@
 </script>
 
 <template>
-    {{ props.auth.name }}
     <div class="index-container">
+        <Header />
         <IndexContent />
     </div>
 </template>

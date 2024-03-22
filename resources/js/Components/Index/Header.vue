@@ -2,9 +2,8 @@
     import { defineProps } from 'vue';
 
     const props = defineProps({
-        auth: Object,
+        username: String,
     });
-
 </script>
 
 <template>
@@ -45,7 +44,7 @@
             </div>
         </div>
         <div class="right-container">
-            <!-- {{ props.auth.name }} -->
+            {{ props.username }}
             <img class="profile-image" src="/assets/mikaelo.jpeg" alt="mikaelo">
         </div>
     </header>

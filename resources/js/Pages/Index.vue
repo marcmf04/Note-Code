@@ -6,14 +6,11 @@
     const props = defineProps({
         auth: Object,
     });
-
-
-
 </script>
 
 <template>
     <div class="index-container">
-        <Header />
+        <Header :username="props.auth.user.username"/>
         <IndexContent />
     </div>
 </template>

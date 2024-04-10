@@ -1,0 +1,12 @@
+[ Description ]
+
+- A page in which you can see each note miniatures and you can click on them to open the note itself
+- Search bar for users and notes
+
+[ Priority ]
+
+- High
+
+[ Done ]
+
+- Not implemented

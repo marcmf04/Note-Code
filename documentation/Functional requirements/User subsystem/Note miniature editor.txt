@@ -1,0 +1,15 @@
+[ Description ]
+
+Miniature editor description:
+- Add text
+- Add miniature height
+- Background color with fixed colors or gradients
+- font styling
+
+[ Priority ]
+
+- Low
+
+[ Done ]
+
+- Not implemented

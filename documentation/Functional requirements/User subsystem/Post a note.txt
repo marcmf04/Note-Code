@@ -1,0 +1,11 @@
+[ Description ]
+
+- Input a title, input the content (CK editor), private/public button, tag people, change note color.
+
+[ Priority ]
+
+- High
+
+[ Done ]
+
+- Not implemented

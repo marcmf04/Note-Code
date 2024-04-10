@@ -1,0 +1,20 @@
+[ Description ]
+
+CK editor description:
+- Write headings
+- Write paragraphs
+- Add own video or YT video
+- image injection freedomly and be able to do whatever you want with them (as in Figma)
+- Add links
+- Put colors on text, gradients, highlighted with gradient of fixed color...
+- Justify content, line spacing, italic, bold, change note margins with mouse movement or putting the margin number
+- Free drawing as base64
+- export .xnc
+
+[ Priority ]
+
+- Low
+
+[ Done ]
+
+- Not implemented

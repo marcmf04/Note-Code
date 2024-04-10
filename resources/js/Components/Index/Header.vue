@@ -1,5 +1,7 @@
 <script setup>
     import { defineProps } from 'vue';
+import SelectOnSteroids from '@/Components/SelectOnSteroids.vue';
+
 
     const props = defineProps({
         username: String,
@@ -8,18 +10,17 @@
 
 <template>
     <header>
-        <div class="left-container">
-            <section>
-                <svg class="section-buttons" viewBox="-1 -1 26 26" xmlns="http://www.w3.org/2000/svg">
+        <nav class="left-container">
+            <section class="section-buttons">
+                <svg viewBox="-1 -1 26 26" xmlns="http://www.w3.org/2000/svg">
                     <path
                         d="M 22 5.724 L 20 4.366 L 14.797 0.855 C 13.098 -0.291 10.902 -0.291 9.203 0.855 L 2.203 5.579 C 0.824 6.51 0 8.059 0 9.724 L 0 19 C 0 21.757 2.243 24 5 24 L 7 24 C 7.553 24 8 23.552 8 23 L 8 14 C 8 13.449 8.448 13 9 13 L 15 13 C 15.552 13 16 13.449 16 14 L 16 23 C 16 23.552 16.447 24 17 24 L 19 24 C 21.757 24 24 21.757 24 19 L 24 9.724 C 24 8.143 23.256 6.666 22 5.724 Z" />
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="section-buttons" viewBox="-1 -1 26 26">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 26 26">
                     <path
                         d="M2.849,23.55a2.954,2.954,0,0,0,3.266-.644L12,17.053l5.885,5.853a2.956,2.956,0,0,0,2.1.881,3.05,3.05,0,0,0,1.17-.237A2.953,2.953,0,0,0,23,20.779V5a5.006,5.006,0,0,0-5-5H6A5.006,5.006,0,0,0,1,5V20.779A2.953,2.953,0,0,0,2.849,23.55Z" />
                 </svg>
             </section>
-
             <div class="search-container">
                 <div class="input-container">
                     <input class="search-input" type="text" placeholder="Escribe aquí para buscar">
@@ -30,7 +31,6 @@
                         </g>
                     </svg>
                 </div>
-
                 <div class="select-container">
                     <select class="search-select">
                         <option selected>Usuarios</option>
@@ -42,7 +42,7 @@
                     </svg>
                 </div>
             </div>
-        </div>
+        </nav>
         <div class="right-container">
             {{ props.username }}
             <img class="profile-image" src="/assets/mikaelo.jpeg" alt="mikaelo">
@@ -74,14 +74,15 @@ section {
     gap: 20px;
 }
 
-.section-buttons {
-    cursor: pointer;
+
+.section-buttons svg {
     width: 36px;
     height: 36px;
     stroke: #B8F2E6;
     fill: transparent;
+    cursor: pointer;
 }
-
+ 
 .input-container {
     position: relative;
 }
@@ -115,6 +116,7 @@ section {
     fill: #B8F2E6;
     width: 20px;
     height: 20px;
+    pointer-events: none
 }
 
 .search-select {
@@ -145,6 +147,7 @@ section {
     fill: #B8F2E6;
     width: 24px;
     height: 24px;
+    pointer-events: none;
 }
 
 .profile-image {

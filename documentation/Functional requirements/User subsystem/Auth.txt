@@ -1,0 +1,9 @@
+[ Auth ]
+
+The user has to be authenticated to access the resource.
+
+
+
+
+[ Priority ]
+High
